@@ -55,4 +55,11 @@ Visual Studio Code extension that provides code snippets for UdonSharp.
     }
     ```
 
+# How to install extension
+1. Go to `Extensions`. (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd>)
+2. Click `Views and More Actions`. <kbd>•••</kbd>
+3. Click `Install from VSIX...`
+4. Locate the `.VSIX` file and install it.
+![How To Install](https://raw.githubusercontent.com/ChrisFeline/vscode-usharp-snippets/master/images/l80qNdbMEp.gif)
+
 More snippets will be added later on.
