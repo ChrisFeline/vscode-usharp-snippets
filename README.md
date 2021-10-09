@@ -1,5 +1,6 @@
 # [Udon Sharp](https://github.com/MerlinVR/UdonSharp) Snippets #
 Visual Studio Code extension that provides code snippets for UdonSharp.
+![How to use](https://raw.githubusercontent.com/ChrisFeline/vscode-usharp-snippets/master/images/2LidjZ3LK1.gif)
 
 ## Snippet List
 * Included Overrides
