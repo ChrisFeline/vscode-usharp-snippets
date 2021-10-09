@@ -1,0 +1,50 @@
+{
+	"name": "usharp-snippets",
+	"displayName": "Udon Sharp Snippets",
+	"description": "Udon Sharp Snippets",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ChrisFeline/vscode-usharp-snippets"
+	},
+	"author": {
+		"name": "Chris Feline",
+		"email": "chrisfeline.dev@gmail.com"
+	},
+	"bugs": {
+		"url": "https://github.com/ChrisFeline/vscode-usharp-snippets",
+		"email": "chrisfeline.dev@gmail.com"
+	},
+	"publisher": "ChrisFeline",
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"unity",
+		"vrchat",
+		"csharp",
+		"usharp",
+		"udon",
+		"udonsharp"
+	],
+	"homepage": "https://github.com/ChrisFeline/vscode-usharp-snippets",
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#6ee194",
+		"theme": "light"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "csharp",
+				"path": "./snippets.json"
+			}
+		]
+	},
+	"scripts": {
+		"build": "vsce package"
+	}
+}

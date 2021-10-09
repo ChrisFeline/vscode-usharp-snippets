@@ -1,0 +1,383 @@
+{
+	"UdonSharpBehaviour": {
+		"prefix": "UdonSharpBehaviour",
+		"description": "UdonSharpBehaviour class template.",
+		"body": [
+			"using UnityEngine;",
+			"using UdonSharp;",
+			"",
+			"public class ${TM_FILENAME_BASE} : UdonSharpBehaviour {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC Interact": {
+		"prefix": "Interact",
+		"description": "Fired when a user interacts with the object\nWill add a box collider if no collider is present.",
+		"body": [
+			"public override void Interact() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnDrop": {
+		"prefix": "OnDrop",
+		"description": "Requires VRC_Pickup",
+		"body": [
+			"public override void OnDrop() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnOwnershipRequest": {
+		"prefix": "OnOwnershipRequest",
+		"description": "Fired when an UdonBehaviour is going to change owner. Returning true will accept the change in ownership, and returning false will reject the change in ownership.",
+		"body": [
+			"public override bool OnOwnershipRequest(VRCPlayerApi requester, VRCPlayerApi newOwner) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnOwnershipTransferred": {
+		"prefix": "OnOwnershipTransferred",
+		"description": "Fired every time a UdonBehaviour changes owner",
+		"body": [
+			"public override void OnOwnershipTransferred(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPickup": {
+		"prefix": "OnPickup",
+		"description": "Requires VRC_Pickup",
+		"body": [
+			"public override void OnPickup() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPickupUseDown": {
+		"prefix": "OnPickupUseDown",
+		"description": "Requires VRC_Pickup",
+		"body": [
+			"public override void OnPickupUseDown() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPickupUseUp": {
+		"prefix": "OnPickupUseUp",
+		"description": "Requires VRC_Pickup",
+		"body": [
+			"public override void OnPickupUseUp() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerJoined": {
+		"prefix": "OnPlayerJoined",
+		"description": "Fired when a new player joins the instance",
+		"body": [
+			"public override void OnPlayerJoined(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerLeft": {
+		"prefix": "OnPlayerLeft",
+		"description": "Fired when a player leaves the instance",
+		"body": [
+			"public override void OnPlayerLeft(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerRespawn": {
+		"prefix": "OnPlayerRespawn",
+		"description": "Fired when a player respawns",
+		"body": [
+			"public override void OnPlayerRespawn(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnSpawn": {
+		"prefix": "OnSpawn",
+		"description": "Fired when a object is spawned via network instantiation",
+		"body": [
+			"public override void OnSpawn() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnStationEntered": {
+		"prefix": "OnStationEntered",
+		"description": "Requires VRC_Station",
+		"body": [
+			"public override void OnStationEntered(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnStationExited": {
+		"prefix": "OnStationExited",
+		"description": "Requires VRC_Station",
+		"body": [
+			"public override void OnStationExited(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnVideoEnd": {
+		"prefix": "OnVideoEnd",
+		"description": "When the video player ends playback",
+		"body": [
+			"public override void OnVideoEnd() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnVideoError": {
+		"prefix": "OnVideoError",
+		"description": "When an error occurs with the player",
+		"body": [
+			"public override void OnVideoError(VideoError videoError) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnVideoLoop": {
+		"prefix": "OnVideoLoop",
+		"description": "If looping is enabled, this will fire at the end",
+		"body": [
+			"public override void OnVideoLoop() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnVideoPause": {
+		"prefix": "OnVideoPause",
+		"description": "When the video player is paused",
+		"body": [
+			"public override void OnVideoPause() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnVideoPlay": {
+		"prefix": "OnVideoPlay",
+		"description": "When you start playing a video",
+		"body": [
+			"public override void OnVideoPlay() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnVideoStart": {
+		"prefix": "OnVideoStart",
+		"description": "When a video is playing for the first time?",
+		"body": [
+			"public override void OnVideoStart() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnVideoReady": {
+		"prefix": "OnVideoReady",
+		"description": "When the video player has loaded the url",
+		"body": [
+			"public override void OnVideoReady() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPreSerialization": {
+		"prefix": "OnPreSerialization",
+		"description": "Fired before sending network data",
+		"body": [
+			"public override void OnPreSerialization() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPostSerialization": {
+		"prefix": "OnPostSerialization",
+		"description": "Fired after sending network data and provides data on whether the serialization attempt succeeded and how many bytes were serialized.",
+		"body": [
+			"public override void OnPostSerialization(VRC.Udon.Common.SerializationResult result) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnDeserialization": {
+		"prefix": "OnDeserialization",
+		"description": "Fired when network data is received",
+		"body": [
+			"public override void OnDeserialization() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerTriggerEnter": {
+		"prefix": "OnPlayerTriggerEnter",
+		"description": "Player enters a trigger",
+		"body": [
+			"public override void OnPlayerTriggerEnter(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerTriggerStay": {
+		"prefix": "OnPlayerTriggerStay",
+		"description": "Player stays in a trigger",
+		"body": [
+			"public override void OnPlayerTriggerStay(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerTriggerExit": {
+		"prefix": "OnPlayerTriggerExit",
+		"description": "Player leaves a trigger",
+		"body": [
+			"public override void OnPlayerTriggerExit(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerCollisionEnter": {
+		"prefix": "OnPlayerCollisionEnter",
+		"description": "Player collides with a collider",
+		"body": [
+			"public override void OnPlayerCollisionEnter(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerCollisionStay": {
+		"prefix": "OnPlayerCollisionStay",
+		"description": "Player stays on a collider",
+		"body": [
+			"public override void OnPlayerCollisionStay(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerCollisionExit": {
+		"prefix": "OnPlayerCollisionExit",
+		"description": "Player leaves the collider",
+		"body": [
+			"public override void OnPlayerCollisionExit(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC OnPlayerParticleCollision": {
+		"prefix": "OnPlayerParticleCollision",
+		"description": "A collision particle hits the player",
+		"body": [
+			"public override void OnPlayerParticleCollision(VRCPlayerApi player) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC MidiNoteOn": {
+		"prefix": "MidiNoteOn",
+		"description": "Triggered when a Note On message is received, typically by pressing a key / pad on your device. See Midi in Udon for more information.",
+		"body": [
+			"public override void MidiNoteOn(int channel, int number, int velocity) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC MidiNoteOff": {
+		"prefix": "MidiNoteOff",
+		"description": "Triggered when a Note Off message is received, typically by releasing a key / pad on your device. See Midi in Udon for more information.",
+		"body": [
+			"public override void MidiNoteOff(int channel, int number, int velocity) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC MidiControlChange": {
+		"prefix": "MidiControlChange",
+		"description": "Triggered when a control change is received. These are typically sent by knobs and sliders on your Midi device. See Midi Events for more information.",
+		"body": [
+			"public override void MidiControlChange(int channel, int number, int value) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC InputJump": {
+		"prefix": "InputJump",
+		"description": "Spacebar on Desktop, typically a face button on controllers.",
+		"body": [
+			"public override void InputJump(bool value, VRC.Udon.Common.UdonInputEventArgs args) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC InputUse": {
+		"prefix": "InputUse",
+		"description": "Left-Click on Desktop, typically a trigger button on controllers.",
+		"body": [
+			"public override void InputUse(bool value, VRC.Udon.Common.UdonInputEventArgs args) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC InputGrab": {
+		"prefix": "InputGrab",
+		"description": "Left-Click on Desktop, typically a grip button on VR controllers.",
+		"body": [
+			"public override void InputGrab(bool value, VRC.Udon.Common.UdonInputEventArgs args) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC InputDrop": {
+		"prefix": "InputDrop",
+		"description": "Right-Click on Desktop, press grip button on Vive Wands and some Windows Mixed Reality Controllers, release grip button on others.",
+		"body": [
+			"public override void InputDrop(bool value, VRC.Udon.Common.UdonInputEventArgs args) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC InputMoveHorizontal": {
+		"prefix": "InputMoveHorizontal",
+		"description": "A and D on Desktop, typically the left stick/pad moving left and right on controllers.",
+		"body": [
+			"public override void InputMoveHorizontal(float value, VRC.Udon.Common.UdonInputEventArgs args) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC InputMoveVertical": {
+		"prefix": "InputMoveVertical",
+		"description": "W and S on Desktop, typically the left stick/pad moving up and down on controllers.",
+		"body": [
+			"public override void InputMoveVertical(float value, VRC.Udon.Common.UdonInputEventArgs args) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC InputLookHorizontal": {
+		"prefix": "InputLookHorizontal",
+		"description": "Moving the mouse left and right on Desktop, turning left and right using the right stick/pad without Comfort Turning on VR controllers, typically the right stick left and right on gamepad controllers.",
+		"body": [
+			"public override void InputLookHorizontal(float value, VRC.Udon.Common.UdonInputEventArgs args) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"VRC InputLookVertical": {
+		"prefix": "InputLookVertical",
+		"description": "Moving the mouse up and down on Desktop, typically the right stick up and down on gamepad and VR controllers.",
+		"body": [
+			"public override void InputLookVertical(float value, VRC.Udon.Common.UdonInputEventArgs args) {",
+			"\t$0",
+			"}"
+		]
+	}
+}
